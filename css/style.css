@@ -438,3 +438,17 @@ form textarea {
     text-align: center;
     color: #fff;
 }
+
+/*     Media Queries     */
+@media (max-width: 1024px) {
+    .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        justify-content: center;
+        gap: 2.5rem;
+        margin-top: 1rem;
+    }
+    .services-box {
+        width: 300px;
+    }
+}
