@@ -102,3 +102,79 @@ header.shadow {
     cursor: pointer;
 }
 /*     Navbar Section Ends     */
+
+/*     Home Section Starts     */
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 0.1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.home-img {
+    order: 3;
+}
+.home-img img {
+    width: 100%;
+}
+.home-text span {
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+.home-text h1 {
+    font-size: var(--big-font);
+    line-height: 1;
+    font-weight: 400;
+}
+.home-text h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--hover);
+}
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 300;
+    margin: 0.7rem 0 1rem;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+}
+.social a {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: var(--text-color);
+}
+ .social .bxl-github:hover {
+    color: #6e5494;
+  }
+  .social .bxl-linkedin-square:hover {
+    color: #0072b1;
+  }
+  .social .bxl-twitter:hover {
+    color:#00acee;
+  }
+  .social .bxl-youtube:hover {
+    color: #c4302b;
+  }
+  .btn {
+    display: inline-block;
+    padding: 6px 25px;
+    background: transparent;
+    border: 2px solid var(--hover);
+    border-radius: 30px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: ease .50s;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    background: var(--hover);
+    color: var(--bg-color);
+  }
+/*     Home Section Ends     */
