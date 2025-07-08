@@ -23,3 +23,82 @@
     --min-font: .85rem;
     --p-font: 1.12rem;
 }
+section {
+    padding: 25px 15%;
+}
+body.active {
+    --text-color: #0f0c27;
+    --bg-color: #efebfa;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+*::selection {
+    color: var(--bg-color);
+    background: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+    margin: 1rem 0 3.6rem 0;
+}
+.heading h2 {
+    font-size: 55px;
+}
+.heading span {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--hover);
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 15px 15%;
+    transition: .2s;
+    box-shadow: -3px -3px 7px #ffffff73 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+header.shadow {
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+.logo {
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.logo span {
+    color: var(--hover);
+}
+
+/*     Navbar Section Starts     */
+.navbar {
+    display: flex;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: var(--hover);
+}
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+#darkmode {
+    font-size: 25px;
+    cursor: pointer;
+}
+/*     Navbar Section Ends     */
