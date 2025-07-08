@@ -298,3 +298,70 @@ header.shadow {
 }
 /*     Services Section Ends     */
 
+/*     Projects Section Starts     */
+.projects .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.projects .container .card {
+    position: relative;
+    max-width: 450px;
+    height: 230px;
+    background: var(--bg-color);
+    padding: 20px 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #4705cf33;
+    transition: .3s ease-in-out;
+}
+.projects .container .card:hover {
+    height: 370px;
+}
+.projects .container .card .imgbox {
+    position: relative;
+    width: 300px;
+    margin-left: 37px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0px 0px 20px #4705cf33;
+}
+.projects .container .card .imgbox img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.projects .container .card .content {
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: var(--text-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.projects .external-link {
+    justify-content: center;
+    margin-top: 20px;
+}
+.projects .external-link a {
+    color: var(--text-color);
+    margin-left: 20px;
+    background: transparent;
+    border: 1px solid var(--sec-color);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+.projects .container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .3s;
+}
+
+/*     Projects Section Ends     */
