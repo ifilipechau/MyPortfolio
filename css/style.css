@@ -365,3 +365,69 @@ header.shadow {
 }
 
 /*     Projects Section Ends     */
+
+/*     Contact Section Starts     */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 .5rem 0 .5rem;
+}
+.contact-container .contact-form {
+    flex: 0 0 50%;
+}
+.contact-container .form {
+    flex: 0 0 50%;
+}
+.details {
+    background: hsla(260, 100%, 44%, .1);
+    width: 450px;
+    padding: 10px;
+    border-radius: .5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.details i {
+    font-size: 1.5rem;
+    color: var(--hover);
+    padding: 7px;
+    margin-top: 15px;
+}
+form input,
+textarea {
+    padding: 10px;
+    border-radius: .5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(260, 100%, 44%, 0.1);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+form input::placeholder,
+textarea::placeholder {
+    color: #8b8a8f;
+}
+form textarea {
+    resize: none;
+    height: 200px;
+}
+.contact-btn {
+    justify-content: center;
+    margin-left: 48px;
+    width: 350px;
+    display: inline-block;
+    color: var(--p-font);
+    background-color: var(--hover);
+    font-size: var(--p-font);
+    padding: 5px 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 30px;
+    transition: ease .40s;
+}
+.contact-btn:hover {
+    transform: scale(1.1);
+}
+/*     Contact Section Ends     */
