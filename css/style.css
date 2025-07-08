@@ -685,3 +685,71 @@ form textarea {
         margin-left: 8px;
     }
 }
+
+@media (max-width: 340px) {
+    :root {
+        --big-font: 1.7rem;
+        --medium-font: 1.1rem;
+    }
+    .home {
+        margin: 4rem 0 0 .5rem;
+    }
+    .home-text {
+        text-align: center;
+    }
+    .home-text span{
+        font-size: .3rem;
+    }
+    .about-text p {
+        font-size: .3rem;
+    }
+    .about-text h3 {
+        font-size: 1.4rem;
+    }
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+    .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        justify-items: center;
+        gap: 2.5rem;
+        margin-top: 1rem;
+    }
+    .services-box {
+        width: 260px;
+    }
+    .projects .container .card {
+        position: relative;
+        max-width: 270px;
+        height: 200px;
+    }
+    .projects .container .card:hover {
+        height: 315px;
+    }
+    .projects .container .card .imgbox {
+        width: 200px;
+        height: 100px;
+        top: -60px;
+        left: -18px;
+    }
+    .projects .container .card .content {
+        margin-top: -100px;
+        padding: 30px 15px 5px 15px;
+        font-size: .9rem;
+    }
+    .details {
+        width: 200px;
+        padding: 4px;
+        margin-bottom: 2rem;
+    }
+    .details p {
+        margin-left: 10px;
+        padding: 15px 0 15px 15px;
+        font-size: .9rem;
+    }
+    .contact-btn {
+        width: 200px;
+        padding: 2px 15px;
+    }
+}
