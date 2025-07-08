@@ -431,3 +431,10 @@ form textarea {
     transform: scale(1.1);
 }
 /*     Contact Section Ends     */
+/*     Footer Starts    */
+.copyright {
+    padding: 20px;
+    background: var(--main-color);
+    text-align: center;
+    color: #fff;
+}
