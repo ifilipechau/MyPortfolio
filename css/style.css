@@ -632,3 +632,56 @@ form textarea {
         margin-left: 43px;
     }
 }
+
+@media (max-width: 680px) {
+    .about-text ul {
+        margin-left: 15px;
+    }
+    .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        justify-content: center;
+        gap: 2.5rem;
+        margin-top: 1rem;
+    }
+    .services-box {
+        width: 300px;
+    }
+    .projects .container .card {
+        position: relative;
+        max-width: 270px;
+        height: 200px;
+    }
+    .projects .container .card:hover {
+        height: 315px;
+    }
+    .projects .container .card .imgbox {
+        width: 200px;
+        height: 100px;
+        top: -60px;
+        left: -18px;
+    }
+    .projects .container .card .content {
+        margin-top: -100px;
+        padding: 30px 15px 5px 15px;
+        font-size: .9rem;
+    }
+    .details {
+        width: 320px;
+        padding: 4px;
+        margin-bottom: 2rem;
+    }
+    .details p {
+        margin-left: 10px;
+        padding: 15px 0 15px 15px;
+        font-size: 0.9rem;
+    }
+    form {
+        width: 320px;
+    }
+    .contact-btn {
+        width: 300px;
+        padding: 2px 15px;
+        margin-left: 8px;
+    }
+}
